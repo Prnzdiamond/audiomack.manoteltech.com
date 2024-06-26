@@ -278,15 +278,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const premuim = document.getElementById("premuim");
   const access = document.getElementById("access");
-  const modal = document.getElementById("modal");
-  const modalOverlay = document.getElementById("modal-overlay");
-  const modalClose = document.getElementById("modal-close");
-  const cancelRedirect = document.getElementById("cancel-redirect");
-  const countdown = document.getElementById("countdown");
-  const modalTitle = document.querySelector(".modal-title");
-  const radio_p = document.getElementById("radio-p");
-  const radio_a = document.getElementById("radio-a");
-  let countdownInterval;
 
   const generateTxid = () =>
     `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
@@ -298,32 +289,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ? `https://ng-app.com/MANOTEL/audiomack-premium-landing-otp-en-doi-web?origin_banner=1&trxId=${txid}`
         : `https://ng-app.com/MANOTEL/audiomack-access-with-data-landing-otp-en-doi-web?origin_banner=1&trxId=${txid}`;
 
-    modalTitle.textContent = `Confirm ${plantype} Subscription`;
-    modal.style.display = "block";
-    modalOverlay.style.display = "block";
-
-    let seconds = 3;
-    countdown.textContent = seconds;
-    countdownInterval = setInterval(() => {
-      countdown.textContent = --seconds;
-      if (seconds === 0) {
-        clearInterval(countdownInterval);
-        window.location.href = url;
-      }
-    }, 1000);
+    window.location.href = url;
   };
 
-  const closeModal = () => {
-    modal.style.display = "none";
-    modalOverlay.style.display = "none";
-    clearInterval(countdownInterval);
-  };
-
-  modalOverlay.addEventListener("click", closeModal);
-  modalClose.addEventListener("click", closeModal);
-  cancelRedirect.addEventListener("click", closeModal);
-  premuim.addEventListener("click", () => {
-    redirectUrl("premium");
-  });
+  premuim.addEventListener("click", () => redirectUrl("premium"));
   access.addEventListener("click", () => redirectUrl("access"));
 });
