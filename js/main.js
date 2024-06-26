@@ -284,6 +284,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const cancelRedirect = document.getElementById("cancel-redirect");
   const countdown = document.getElementById("countdown");
   const modalTitle = document.querySelector(".modal-title");
+  const radio_p = document.getElementById("radio-p");
+  const radio_a = document.getElementById("radio-a");
   let countdownInterval;
 
   const generateTxid = () =>
@@ -320,6 +322,8 @@ document.addEventListener("DOMContentLoaded", () => {
   modalOverlay.addEventListener("click", closeModal);
   modalClose.addEventListener("click", closeModal);
   cancelRedirect.addEventListener("click", closeModal);
-  premuim.addEventListener("click", () => redirectUrl("premium"));
+  premuim.addEventListener("click", () => {
+    redirectUrl("premium");
+  });
   access.addEventListener("click", () => redirectUrl("access"));
 });

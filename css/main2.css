@@ -415,6 +415,10 @@ div.row {
   margin: 0 auto;
 }
 
+.plan-bx.selected #radio {
+  display: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
