@@ -1,0 +1,765 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-SemiBold.eot");
+  src: url("fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("fonts/Poppins-SemiBold.woff") format("woff"),
+    url("fonts/Poppins-SemiBold.ttf") format("truetype"),
+    url("fonts/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Bold.eot");
+  src: url("fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Poppins-Bold.woff2") format("woff2"),
+    url("fonts/Poppins-Bold.woff") format("woff"),
+    url("fonts/Poppins-Bold.ttf") format("truetype"),
+    url("fonts/Poppins-Bold.svg#Poppins-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.eot");
+  src: url("fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Poppins-Regular.woff2") format("woff2"),
+    url("fonts/Poppins-Regular.woff") format("woff"),
+    url("fonts/Poppins-Regular.ttf") format("truetype"),
+    url("fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-BoldItalic.eot");
+  src: url("fonts/Poppins-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Poppins-BoldItalic.woff2") format("woff2"),
+    url("fonts/Poppins-BoldItalic.woff") format("woff"),
+    url("fonts/Poppins-BoldItalic.ttf") format("truetype"),
+    url("fonts/Poppins-BoldItalic.svg#Poppins-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Italic.eot");
+  src: url("fonts/Poppins-Italic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Poppins-Italic.woff2") format("woff2"),
+    url("fonts/Poppins-Italic.woff") format("woff"),
+    url("fonts/Poppins-Italic.ttf") format("truetype"),
+    url("fonts/Poppins-Italic.svg#Poppins-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-SemiBoldItalic.eot");
+  src: url("fonts/Poppins-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/Poppins-SemiBoldItalic.woff2") format("woff2"),
+    url("fonts/Poppins-SemiBoldItalic.woff") format("woff"),
+    url("fonts/Poppins-SemiBoldItalic.ttf") format("truetype"),
+    url("fonts/Poppins-SemiBoldItalic.svg#Poppins-SemiBoldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  font-display: swap;
+  font-weight: 400;
+  line-height: 1.8;
+  font-size: 13px;
+  transition: padding 0.12s ease-in-out, background 0.2s, color 0.2s;
+  padding-bottom: 110px;
+  color: #222;
+}
+
+.button-link,
+a,
+button {
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.button-link,
+a {
+  color: #ffa200;
+  text-decoration: underline;
+}
+
+.button-link:focus,
+.button-link:hover,
+a:focus,
+a:hover {
+  color: #cc8200;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+.hero {
+  background: url(../images/hero.png) no-repeat center top;
+  width: 100%;
+  display: block;
+  height: 450px;
+  background-size: cover;
+}
+
+.container {
+  max-width: 900px;
+  margin: -410px auto 0;
+}
+
+.user {
+  background: #000;
+  width: 100%;
+  display: block;
+  height: 485px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.user:after {
+  background: url(../images/user.jpg) no-repeat center top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.87;
+  content: "";
+  display: block;
+}
+
+.mtn-logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 2;
+  width: 86px;
+  height: 86px;
+}
+
+.audiomack-logo {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 2;
+  width: 180px;
+  height: 24px;
+}
+
+.am-gradient {
+  margin: 24px auto;
+  display: block;
+  width: 58px;
+  height: 40px;
+}
+
+.content {
+  background: #fff;
+  padding: 24px;
+  margin-top: -10px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.4rem;
+  max-width: 700px;
+  margin: 0 auto 24px;
+}
+
+.phoneBox {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #f4f4f4;
+  padding: 24px 24px 40px;
+}
+
+.phoneBoxTitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.phoneInputContainer {
+  display: flex;
+  margin: 24px 0;
+}
+
+.areaCode {
+  background: #e2e2e2;
+  color: #666666;
+  height: 46px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 90px;
+  justify-content: center;
+  margin-right: 16px;
+  font-size: 1rem;
+}
+
+.phoneInput {
+  border: 1px solid #dddddd;
+  flex-grow: 1;
+  padding: 0 16px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.phoneInput.hasError {
+  border: 1px solid #ab0000;
+}
+
+.plans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  flex-direction: column;
+}
+
+.plans :last-child {
+  margin-bottom: 0;
+}
+
+.planCheckbox {
+  margin: 0 20px;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  height: 230px;
+  width: 230px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 530px) {
+  .plans {
+    flex-direction: row;
+  }
+
+  .planCheckbox {
+    margin-bottom: 0;
+  }
+}
+
+.planCheckbox:focus-within {
+  box-shadow: inset 0 0 0 2px #fdca2f;
+}
+
+.planCheckbox:before {
+  content: "";
+  display: block;
+  background: #fdca2f;
+  border-radius: 50%;
+  top: -20px;
+  left: -25%;
+  width: 150%;
+  height: 50%;
+  position: absolute;
+}
+
+.planData {
+  position: relative;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-left: 10px;
+  height: 110px;
+}
+
+.planData .space {
+  font-size: 1rem;
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+.planTitle {
+  border-bottom: 1px solid #d8d8d8;
+  display: block;
+  margin: 0 24px;
+  padding-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.planPrice {
+  margin: 4px 24px;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* my added styling */
+
+.planCheckbox {
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 3px transparent;
+}
+
+.planCheckbox:hover {
+  background-color: #;
+}
+
+.planCheckbox:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 0 3px #f99d1c;
+  padding: 11px;
+}
+
+.planData {
+  position: relative;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-left: 10px;
+  height: 110px;
+  color: #333;
+}
+
+.planData .space {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.free-am {
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 8px;
+  color: #666;
+}
+
+.planTitle {
+  border-bottom: 1px solid #d8d8d8;
+  display: block;
+  margin: 12px 0;
+  padding-bottom: 8px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.planPrice {
+  margin: 4px 0;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #666;
+}
+
+/* my added styling ends here */
+
+.planCheckbox input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: #d8d8d8;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  outline: 0;
+  position: relative;
+}
+
+.planCheckbox input[type="radio"]:checked {
+  background: #01678f;
+}
+
+.planCheckbox input[type="radio"]:checked:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 3px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  background: #fff;
+}
+
+.planCheckbox input[type="radio"]:checked:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 3px;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  background: #fff;
+}
+
+.pillButton {
+  border-radius: 30px;
+  width: 300px;
+  height: 60px;
+  background: #fdca2f;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  margin: 24px auto;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  line-height: 60px;
+}
+
+.pillButton:hover,
+.pillButton:focus {
+  color: #fff;
+  background: #000;
+}
+
+.pillButton[disabled] {
+  opacity: 0.7;
+  cursor: default;
+  pointer-events: none;
+}
+
+.submitMessage {
+  text-align: center;
+  margin: 12px 0;
+}
+
+.error {
+  color: #ab0000;
+}
+
+.text-icon {
+  margin-right: 0.5em;
+  vertical-align: text-top;
+}
+
+.cancel-plan-btn {
+  color: #01678f;
+  border: 0;
+  background: none;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.cancel-plan-btn:hover,
+.cancel-plan-btn:focus {
+  color: #000;
+}
+
+.no-data {
+  text-transform: uppercase;
+}
+
+.free-am {
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.8rem;
+  line-height: 0;
+  margin-left: -10px;
+  margin-top: -6px;
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: opacity 0.12s ease-out;
+  opacity: 0;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  transition: opacity 0.15s ease-in;
+}
+
+.modal {
+  background: #fff;
+  max-width: 600px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  left: 50%;
+  padding: 20px;
+  z-index: 4;
+  display: none;
+  border: 2px solid #ffc107;
+  transition: opacity 0.12s ease-out, transform 0.12s ease-out;
+}
+
+.modal.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 1.7rem;
+  color: #999999;
+  background: none;
+  border: 0;
+  width: 44px;
+  height: 44px;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.modal-text {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* new page styling */
+div.row {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 2px;
+  height: fit-content;
+}
+
+.pg-banner {
+  padding-top: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-banner img {
+  border-radius: 8px;
+}
+
+.am-gradient {
+  margin: 24px auto;
+  display: block;
+  width: 35px;
+  height: 25px;
+}
+
+.intro {
+  font-size: 18px;
+}
+
+.text {
+  text-align: center;
+}
+
+.plan-bx {
+  width: 187px;
+  height: 222px;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  border-radius: 8px;
+  border: 2px #eaeaea solid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.plan-bx.checked {
+  border: 2px #ffcb03 solid;
+}
+
+.plan-bx svg {
+  height: 1em;
+  width: 1em;
+}
+
+@media (min-width: 1280px) {
+  .plan-bx .label {
+    position: absolute;
+    top: 40px;
+    left: 12px;
+    width: 163px;
+    text-align: center;
+  }
+
+  .plan-bx .desktop .desktopTitle {
+    font-size: 25px;
+    line-height: 10.6px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+.optionStatus {
+  margin-top: 10px;
+  padding: 12px 24px;
+  border-radius: 105px;
+  border: 1px #000000 solid;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  transition: all 0.4s ease-in-out;
+}
+
+.optionStatus .selected {
+  transition: margin 4s ease-in-out;
+  background-color: #ffcb03;
+  border: none;
+  padding: 8px 12px;
+  width: 90px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pg-banner {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.img-banner img {
+  width: 100%;
+  height: auto;
+}
+.content {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.intro {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.text span {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+.plans {
+  width: 100%;
+}
+.plan-bx {
+  position: relative;
+  border: 2px solid #eaeaea;
+  padding: 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+.plan-bx:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.plan-bx.selected {
+  border-color: #ffcb03;
+}
+.plan-bx.selected .optionStatus {
+  background-color: #ffcb03;
+  color: white;
+  font-size: 12px;
+  border: none;
+  border-radius: 105px;
+}
+.checked {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffcb03;
+  color: white;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+.mobileTitle,
+.desktopTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+.underTitle {
+  font-size: 14px;
+  color: gray;
+}
+.optionStatus {
+  margin-top: 30px;
+  font-size: 14px;
+  color: inherit;
+}
+
+.plans .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}

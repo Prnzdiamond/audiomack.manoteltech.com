@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Campaigns" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AM-MTN-Error" transform="translate(-520.000000, -1301.000000)" fill="#D41A00" fill-rule="nonzero">
+            <g id="content" transform="translate(270.000000, 261.000000)">
+                <g id="Group-2" transform="translate(91.000000, 448.000000)">
+                    <path d="M168,605 L170,605 L170,607 L168,607 L168,605 Z M168,597 L170,597 L170,603 L168,603 L168,597 Z M168.99,592 C163.47,592 159,596.48 159,602 C159,607.52 163.47,612 168.99,612 C174.52,612 179,607.52 179,602 C179,596.48 174.52,592 168.99,592 Z M169,610 C164.58,610 161,606.42 161,602 C161,597.58 164.58,594 169,594 C173.42,594 177,597.58 177,602 C177,606.42 173.42,610 169,610 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
